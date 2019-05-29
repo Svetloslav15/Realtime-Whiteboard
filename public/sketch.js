@@ -7,7 +7,7 @@ function preload() {
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(bg);
-	socket = io.connect("http://localhost:3000/");
+	socket = io.connect("https://studywhiteboard.herokuapp.com/");
 	socket.on("mouse", function(data){
         fill(0);
         noStroke();
